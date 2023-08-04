@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Da'Maury Portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+<!--    using div containers and adding display flex inside css allows you to flex the text for example the nav bar-->
+    <div class = "container">
+    <nav>
+     <img src="images/damaury.logo.jpg" class = "logo">
+      <ul>
+      <li><a href= "#">HOME</a></li>
+        <li><a href= "#">ABOUT</a></li> 
+        <li><a href= "#">SERVICES</a></li> 
+        <li><a href= "#">PORTFOLIO</a></li> 
+        <li><a href= "#">CONTACT</a></li> 
+        </ul>    
+                                         
+        </nav>
+        <div class = "header-text">
+        <p>Learn Proper Sneaky Links</p>
+        <h1> Sneaking Out With <span>Da'Maury</span><br> I'm Teaching Proper Ways To Cheat</h1>
+        </div>
+             
+    </div>
+    </div> 
+     
+    
+<!--About -->
+    <div id= "about">
+    <div class = "row">
+    <div class = "about-col-1">
+         <img src = "images/damaury.logo.jpg" width="200px" height="200px">
+        </div>
+        <div class = "about-col-2">
+             <h1 class = "sub-title">About Me</h1>
+    <p>My residence is Richmond,Ca. I'm outside almost everyday so you cheat with me because most likely I won't care and "HE" or "SHE" won't find out</p>
+    
+    <div class = "tab-titles">
+        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('Ventures')">Ventures</p>
+    </div>
+    <ul>
+        <li><span>UI/UX</span><br>Sneaky Link Times</li>
+         <li><span>Waytooexotic</span><br></li>
+         <li><span>Ya Fav Lightskin</span><br></li>
+            </ul>
+            </div>
+    <div class = "tab-content" id = "experience">
+        <ul> 
+            <li><span>2015 - Current</span><br>The hidden genius project / student</li>
+            <li><span>2016 - 2018</span><br>Making Waves Academy / 11th grade</li>
+            <li><span>2015 - Current</span><br>Psychology / College</li>
+             </ul>
+        
+        </div>
+        <div class= "tab-contents" id= "ventures">
+                   <ul>
+        <li><span>2020</span><br>Days before the glow up</li>
+            <li><span>2021</span><br>decent looking fellow</li>
+            <li><span>2022</span><br>Psychology / College</li>
+            </ul>
+        </div>
+        </div>
+        <div>
+        </div>
+        
+<!--        javascript-->
+        <script>
+            function opentab(tabId) {
+//                hide all tab contents
+                const tabContents = document.querySelectorAll('.tab-contents');
+                for (const tab of tabContents) {
+                    tab.classList.remove('active-tab');    
+                }
+//            show the selected tab content
+            const (selectedTab) {
+                selectedTab.classList.add('active-tab');
+            }
+         }
+        
+                        
+        
+                                </script>
+                            
+<!--                            Services-->
+    <div class="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Ways To Sneakout</h2>
+                    <p>How would you plot an escape from your room to CHEAT</p>
+                    <a href="https://www.instagram.com/waytoo.exotic/">Follow Me</a>
+                    </div>
+                
+        </div>
+        </div>
+         </div>
+<!--                    Portfolio-->
+        <div id="portfolio">
+            <div class="container">
+            <h1 class = "sub-title">My Work</h1>
+                <div class= "work-list">
+                <div class= "work">
+                    <img src = "Images/SFDIFF.jpeg" width="200px" height="200px">
+                    <div class="layer">
+                    <h3>Tropical for their liking</h3>
+                        <p> Exotic is the same as a P Pusher, ya feel me</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                 
+        </div>
+    
+<!--Contact     -->
+        
+        <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+            <h1 class= "sub-title">CONTACT ME</h1> 
+                <p>Gmail: damaury.olsen@hgs.hiddengeniusproject.org</p>
+                <p>Instagram: thatboy.damaury</p>
+                <div class="social-icons">
+                <a herf= "><i class="fab fa-instagram></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    
+    </div>
+    </body>
+</html>
+
+
